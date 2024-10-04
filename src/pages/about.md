@@ -1,0 +1,48 @@
+---
+title: about
+layout: base.njk
+---
+
+## <h1>About Us</h1>
+
+<p>Meet our dedicated team behind <i> Cowhead Company and Associates.</i><p>
+<div class="table-container">
+<table>
+    
+    <tr>
+        <td>
+            <div class="team-member">
+            <img class="team-img" src="/images/rijan-dahal.png" alt="Team Member 1">
+            <p class="team-name"> Rijan Dahal</p>
+            <p class="team-position"> Managing Director </p>
+            </div>
+        </td>
+
+        <td>
+            <div class="team-member">
+            <img class="team-img" src="/images/mathew-fox.jpg" alt="Team Member 2">
+            <p class="team-name"> Mathew Fox</p>
+            <p class="team-position"> Treasurer</p>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="team-member">
+            <img class="team-img" src="/images/harold-ford.jpg" alt="Team Member 3" >
+            <p class="team-name"> Harold Ford</p>
+            <p class="team-position"> General Manager</p>
+            </div>
+        </td>
+
+        <td>
+            <div class="team-member">
+            <img class="team-img" src="/images/mowee-mow.png" alt="Team Member 4" >
+            <p class="team-name"> Moowe Moo</p>
+            <p class="team-position"> Head of Cows</p>
+            </div>
+        </td>
+    </tr>
+   
+</table>
+ </div>

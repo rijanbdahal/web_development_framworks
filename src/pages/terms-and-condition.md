@@ -1,0 +1,40 @@
+---
+title: terms-and-condition
+layout: base.njk
+---
+<div class="container">
+<h1>Terms and Conditions</h1> 
+<h3><i>Effective Date: 2024-10-01</i></h3>
+ <p>Welcome to <strong>Cowhead Company and Associates</strong>. By using our website or services ("Services"), you agree to these Terms and Conditions. If you do not agree, please do not use our Services.</p>
+ <h4>1. Acceptance of Terms</h4> 
+ <p>Your use of our Services constitutes acceptance of these Terms.</p> 
+ <h4>2. Changes to Terms</h4>
+  <p>We may update these Terms at any time. Changes are effective upon posting on our website. Continued use signifies acceptance of the new Terms.</p>
+   <h4>3. User Accounts</h4> 
+   <p>You may need to create an account. 
+   You agree to:</p>
+    
+   <a>         Provide accurate information.</a><br>
+   <a>         Keep your password secure.</a> <br>
+   <a>         Notify us of unauthorized use.</a> <br>
+    
+   <h4>4. Intellectual Property</h4> 
+   <p>All content is the property of <strong>Cowhead Company and Associates</strong>. You may not use it without our consent.</p> 
+   <h4>5. User Content</h4> 
+   <p>By submitting content, you grant us a license to use it. You are responsible for the legality of your submissions.</p> 
+   <h4>6. Prohibited Activities</h4> 
+   <p>You agree not to:</p> 
+   <ul>
+    <li>Use our Services for illegal purposes.</li>
+    <li>Introduce harmful code.</li> 
+    <li>Attempt unauthorized access.</li>
+     </ul> 
+     <h4>7. Disclaimer of Warranties</h4>
+     <p>Our Services are provided "as is." We do not guarantee uninterrupted or error-free access.</p> <h4>8. Limitation of Liability</h4>
+     <p><strong>Cowhead Company and Associates</strong> is not liable for any indirect or consequential damages.</p> 
+     <h4>9. Indemnification</h4> 
+     <p>You agree to indemnify us against any claims related to your use of our Services.</p>
+      <h4>10. Governing Law</h4> 
+      <p>These Terms are governed by the laws of <strong>Canada</strong>.</p> 
+      <h4>11. Contact Information</h4> <p>For questions, contact us at <strong>cowhead.inquiries@cowhead.com</strong>.</p>
+</div>

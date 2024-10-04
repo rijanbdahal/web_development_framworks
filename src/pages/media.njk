@@ -1,0 +1,17 @@
+---
+title: media
+layout: base.njk
+---
+
+    <h1>Media</h1>
+<div class="video-list">
+    {% for video in youtube.items %}
+    <div class="video-item">
+        <h2 class="video-title">{{ video.snippet.title }}</h2>
+        <a href="https://www.youtube.com/watch?v={{ video.id.videoId }}" target="_blank" class="video-link">
+            <img src="{{ video.snippet.thumbnails.default.url }}" alt="{{ video.snippet.title }}" class="video-thumbnail">
+        </a>
+        <p class="video-published">Published at: {{ video.snippet.publishedAt }}</p>
+    </div>
+{% endfor %}
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "wedb_framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "github:11ty/eleventy",
+    "axios": "^1.7.7",
+    "eleventy-plugin-dynamic-categories": "^0.1.5",
+    "node-fetch": "^3.3.2",
+    "nunjucks": "^3.2.4",
+    "require": "^2.4.20"
+  }
+}

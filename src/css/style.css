@@ -1,0 +1,310 @@
+/**
+File Name: Style.css
+Author: Rijan Dahal
+Description: Style sheet for styling website
+**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;      
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid #ff5722;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;  
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.site-title {
+    font-size: 1.5rem;          
+    letter-spacing: 1px;      
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin: auto;               
+    text-align: left;
+}
+
+/* Navigation bar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff5722;
+}
+
+
+main {
+    flex: 1;  
+    padding: 20px;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #ff5722;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px 0; 
+}
+
+td {
+    text-align: center; 
+    padding: 10px; 
+    vertical-align: top; 
+}
+
+.team-member {
+    text-align: center; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 20px; 
+    margin: 10px; 
+    background-color: #f9f9f9; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    max-width: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.team-member:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+}
+
+.team-img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    margin-bottom: 15px; 
+}
+
+.team-name {
+    font-size: 1.2rem; /* Slightly larger font size for name */
+    font-weight: bold; /* Makes the name bold */
+    margin: 0; /* Removes default margin */
+}
+
+.team-position {
+    font-size: 1rem; /* Regular font size for position */
+    color: #777; /* Gray color for the position */
+    margin-top: 5px; /* Space above the position text */
+}
+
+
+.project-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Title styling */
+.project-title {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #2c3e50; 
+}
+
+.project-description {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #34495e; 
+}
+
+.project-slogan {
+    font-weight: bold;
+    color: #27ae60; 
+}
+
+
+.project-date {
+    font-style: italic;
+    color: #7f8c8d; 
+}
+
+
+.project-cards img {
+    max-width: 100%;
+    height: auto;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: #2980b9;
+}
+
+.pagination span {
+    color: #2c3e50;
+}
+
+.pagination a:hover {
+    text-decoration: underline;
+    color: #1abc9c; 
+}
+
+
+.project-cards {
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+
+form {
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+label {
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #007BFF; /* Change border color on focus */
+    outline: none; 
+}
+
+button[type="submit"] {
+    background-color: #007BFF;
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
+}
+
+.video-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.video-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box; 
+}
+
+.video-title {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.video-link {
+    display: block;
+}
+
+.video-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.video-published {
+    color: #666;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }

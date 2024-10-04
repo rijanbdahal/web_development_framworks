@@ -1,0 +1,37 @@
+---
+title: Projects
+layout: base.njk
+pagination:
+  data: data.projects  # Correctly access projects inside the JSON
+  size: 1             # Number of projects per page
+  alias: project       # Alias for the current project in the loop
+  addAllPagesToCollections: true
+  permalink: "/pages/projects/project+{{ pagination.page }}/"  # Ensure each page has a unique URL
+---
+
+<h1>Our Projects</h1>
+<p>At Cowhead Company and Associates, our projects focus on sustainable farming, ethical dairy production, and innovation. We prioritize eco-friendly practices, humane treatment of animals, and creating clean, high-quality dairy products. From sustainable farming methods to developing lactose-free options, we are committed to delivering responsible, environmentally conscious dairy that benefits both people and the planet.</p>
+<p>Our projects throughout the years:</p><br>
+<div class ="project-container">
+
+
+<div class="project-cards">
+    {% for project in pagination.items %}
+    <h2 class="project-title">{{ project.title }}</h2>
+    <p class="project-description">{{ project.description }}</p>
+    <p class= "project-slogan"><strong>Slogan:</strong> {{ project.slogan }}</p>
+    <p class ="project-date"> {{project.start_date}} - {{project.end_date}}</p>
+    {% endfor %}
+</div>
+
+<!-- Pagination Controls -->
+<div class="pagination">
+    {% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}">Previous</a>
+    {% endif %}
+    <span>Page {{ pagination.pageNumber + 1 }} of {{ 3 }}</span> <!-- pagination.pageNumber is zero-indexed, so add 1 -->
+    {% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}">Next</a>
+    {% endif %}
+</div>
+</div>

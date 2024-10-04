@@ -1,0 +1,33 @@
+{
+   "projects":
+   [
+    {
+        "page":1,
+        "title":"Sustinable Dairy Farming",
+        "description": "A project aimed at implementing sustainable farming practices to improve milk production while minimizing environmental impact.",
+        "start_date": "2023-01-01",
+        "end_date": "2024-01-01",
+        "slogan":"LETS SAVE PLANET ONE GLASS AT A TIME",
+        "image":"'/ethical-farming.jpg'"
+    },
+    {
+        "page":2,
+        "title":"Ethical Farming",
+        "description": "A project aimed at implementing ethical and humane farming practices to improve life quality of our beloved farm animals while maintaining milk production and minimizing environmental impact.",
+        "start_date": "2020-01-10",
+        "end_date": "2024-08-30",
+        "slogan":"CLEAN MILK FOR US",
+        "image":"'/ethical-farming.jpg'"
+
+    },
+    {
+        "page":3,
+        "title":"Lactose Free Dairy Product",
+        "description": "A project aimed at creating line of lactose free dairy products to serve our lactose intolerant customers so they too can enjoy the goodness of dairy.",
+        "start_date": "2022-01-01",
+        "end_date": "present",
+        "slogan":"MILK FOR ALL",
+        "image":"/ethical-farming.jpg"
+    }
+   ]
+}
