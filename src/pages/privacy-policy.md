@@ -1,6 +1,8 @@
 ---
 title: privacy-policy
+Date: 2024-10-01
 layout: base.njk
+
 ---
 <div class="container">
 <h1>Privacy Policy</h1>

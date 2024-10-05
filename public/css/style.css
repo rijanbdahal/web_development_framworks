@@ -1,4 +1,8 @@
-/* Reset some default styles */
+/**
+File Name: Style.css
+Author: Rijan Dahal
+Description: Style sheet for styling website
+**/
 * {
     margin: 0;
     padding: 0;
@@ -6,13 +10,13 @@
 }
 
 html, body {
-    height: 100%;   /* Set height of html and body to 100% */
+    height: 100%; 
 }
 
 body {
     display: flex;
-    flex-direction: column; /* Make the body a flex container with column direction */
-    min-height: 100vh;      /* Set minimum height to 100% of the viewport height */
+    flex-direction: column; 
+    min-height: 100vh;      
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
@@ -31,10 +35,9 @@ header {
 
 .header-left {
     display: flex;
-    align-items: center;  /* Aligns logo and title vertically */
+    align-items: center;  
 }
 
-/* Logo in header */
 .logo {
     width: 50px;
     height: auto;
@@ -42,10 +45,10 @@ header {
 }
 
 .site-title {
-    font-size: 1.5rem;          /* Adjust font size */
-    letter-spacing: 1px;      /* Space between letters */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
-    margin: auto;               /* Remove default margin */
+    font-size: 1.5rem;          
+    letter-spacing: 1px;      
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin: auto;               
     text-align: left;
 }
 
@@ -70,9 +73,9 @@ nav ul li a:hover {
     color: #ff5722;
 }
 
-/* Main content should take up remaining space */
+
 main {
-    flex: 1;  /* This allows the main content to take up remaining space */
+    flex: 1;  
     padding: 20px;
 }
 
@@ -89,44 +92,44 @@ footer {
 }
 
 table {
-    border-collapse: collapse; /* Makes borders collapse into a single border */
+    border-collapse: collapse;
 }
 
 .table-container {
-    display: flex; /* Use flexbox to center the table */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically, if needed */
-    margin: 20px 0; /* Adds some margin above and below the table */
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 20px 0; 
 }
 
 td {
-    text-align: center; /* Centers the content in each cell */
-    padding: 10px; /* Adds space around each image */
-    vertical-align: top; /* Aligns text at the top */
+    text-align: center; 
+    padding: 10px; 
+    vertical-align: top; 
 }
 
 .team-member {
-    text-align: center; /* Center-aligns the content */
-    border: 1px solid #ccc; /* Light border around each member */
-    border-radius: 8px; /* Rounds the corners */
-    padding: 20px; /* Adds space inside the div */
-    margin: 10px; /* Adds space between divs */
-    background-color: #f9f9f9; /* Light background color */
-    transition: transform 0.3s, box-shadow 0.3s; /* Adds transition for hover effect */
-    max-width: 250px; /* Sets a max width for each member box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    text-align: center; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 20px; 
+    margin: 10px; 
+    background-color: #f9f9f9; 
+    transition: transform 0.3s, box-shadow 0.3s; 
+    max-width: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .team-member:hover {
-    transform: translateY(-5px); /* Slightly lifts the card on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deepens shadow on hover */
+    transform: translateY(-5px); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
 }
 
 .team-img {
-    width: 200px; /* Makes the image responsive */
-    height: 200px; /* Maintains aspect ratio */
-    border-radius: 50%; /* Makes the image circular */
-    margin-bottom: 15px; /* Space between image and text */
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    margin-bottom: 15px; 
 }
 
 .team-name {
@@ -152,29 +155,27 @@ td {
 .project-title {
     font-size: 24px;
     margin: 15px 0;
-    color: #2c3e50; /* Darker shade for titles */
+    color: #2c3e50; 
 }
 
-/* Project description styling */
 .project-description {
     font-size: 16px;
     margin: 10px 0;
-    color: #34495e; /* Slightly lighter for better readability */
+    color: #34495e; 
 }
 
-/* Slogan styling */
 .project-slogan {
     font-weight: bold;
-    color: #27ae60; /* Green for slogans to reflect sustainability */
+    color: #27ae60; 
 }
 
-/* Date styling */
+
 .project-date {
     font-style: italic;
-    color: #7f8c8d; /* Gray for dates */
+    color: #7f8c8d; 
 }
 
-/* Image styling */
+
 .project-cards img {
     max-width: 100%;
     height: auto;
@@ -182,7 +183,6 @@ td {
     border-radius: 5px;
 }
 
-/* Pagination controls styling */
 .pagination {
     display: flex;
     justify-content: space-between;
@@ -194,56 +194,55 @@ td {
 
 .pagination a {
     text-decoration: none;
-    color: #2980b9; /* Blue for links */
+    color: #2980b9;
 }
 
 .pagination span {
-    color: #2c3e50; /* Dark color for page info */
+    color: #2c3e50;
 }
 
-/* Hover effect for pagination links */
 .pagination a:hover {
     text-decoration: underline;
-    color: #1abc9c; /* Change color on hover */
+    color: #1abc9c; 
 }
 
-/* Project cards styling */
+
 .project-cards {
     border: 1px solid #dcdcdc;
     border-radius: 5px;
     padding: 15px;
-    background-color: #ffffff; /* White background for cards */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+    background-color: #ffffff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
 }
 
-/* Contact Form Styles */
+
 form {
-    max-width: 600px; /* Set a maximum width for the form */
-    margin: 0 auto; /* Center the form */
-    padding: 20px; /* Add padding */
-    border: 1px solid #ccc; /* Border around the form */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f9f9f9; /* Light background color */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; 
+    margin: 0 auto;
+    padding: 20px; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
 }
 
 label {
-    display: block; /* Make labels block elements */
-    margin-bottom: 8px; /* Space between label and input */
-    font-weight: bold; /* Bold text for labels */
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: bold; 
 }
 
 input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-    width: 100%; /* Full width for inputs */
-    padding: 10px; /* Padding inside the input fields */
-    margin-bottom: 15px; /* Space below each input */
-    border: 1px solid #ccc; /* Border around input fields */
-    border-radius: 4px; /* Rounded corners */
-    box-sizing: border-box; /* Include padding in width */
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
 }
 
 input[type="text"]:focus,
@@ -251,35 +250,35 @@ input[type="email"]:focus,
 input[type="tel"]:focus,
 textarea:focus {
     border-color: #007BFF; /* Change border color on focus */
-    outline: none; /* Remove default outline */
+    outline: none; 
 }
 
 button[type="submit"] {
-    background-color: #007BFF; /* Button background color */
-    color: white; /* Button text color */
-    padding: 10px 15px; /* Padding inside the button */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Increase font size */
-    transition: background-color 0.3s; /* Smooth transition */
+    background-color: #007BFF;
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s; 
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Darker background on hover */
+    background-color: #0056b3; 
 }
 
 .video-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Space between video items */
+    gap: 20px; 
 }
 
 .video-item {
     border: 1px solid #ccc;
     padding: 10px;
-    width: calc(33.33% - 20px); /* Adjust width to create a responsive layout */
-    box-sizing: border-box; /* Include padding and border in width */
+    width: calc(33.33% - 20px); 
+    box-sizing: border-box; 
 }
 
 .video-title {
@@ -302,10 +301,10 @@ button[type="submit"]:hover {
 
 .container {
     width: 100%;
-    max-width: 1200px; /* Adjust based on your layout */
-    margin: 0 auto; /* Centers the container */
+    max-width: 1200px; 
+    margin: 0 auto; 
     padding: 20px;
-    background-color: #f5f5f5; /* Optional background color */
-    border-radius: 8px; /* Optional rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    background-color: #f5f5f5;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
