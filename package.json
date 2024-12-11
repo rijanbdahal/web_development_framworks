@@ -17,6 +17,7 @@
     "dotenv": "^16.4.7",
     "eleventy": "^1.0.7",
     "eleventy-plugin-dynamic-categories": "^0.1.5",
+    "mongodb": "^6.12.0",
     "node-fetch": "^3.3.2",
     "nunjucks": "^3.2.4",
     "require": "^2.4.20"

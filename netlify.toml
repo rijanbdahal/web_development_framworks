@@ -1,0 +1,6 @@
+[build]
+  functions = "netlify/functions"
+  publish = "_site"
+
+[dev]
+  functions = "netlify/functions"
