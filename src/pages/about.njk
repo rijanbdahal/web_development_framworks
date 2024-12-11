@@ -5,46 +5,20 @@ tags: about,about_us
 layout: base.njk
 ---
 
-## <h1>About Us</h1>
+<h1>About Us</h1>
 
-<p>Meet our dedicated team behind <i> Cowhead Company and Associates.</i><p>
-<div class="table-container">
-<table>
-    
-    <tr>
-        <td>
-            <div class="team-member">
-            <img class="team-img" src="/images/rijan-dahal.png" alt="Team Member 1">
-            <p class="team-name"> Rijan Dahal</p>
-            <p class="team-position"> Managing Director </p>
-            </div>
-        </td>
+<p>Meet our dedicated team behind <i> Cowhead Company and Associates.</i></p>
 
-        <td>
-            <div class="team-member">
-            <img class="team-img" src="/images/mathew-fox.jpg" alt="Team Member 2">
-            <p class="team-name"> Mathew Fox</p>
-            <p class="team-position"> Treasurer</p>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <div class="team-member">
-            <img class="team-img" src="/images/harold-ford.jpg" alt="Team Member 3" >
-            <p class="team-name"> Harold Ford</p>
-            <p class="team-position"> General Manager</p>
-            </div>
-        </td>
-
-        <td>
-            <div class="team-member">
-            <img class="team-img" src="/images/mowee-mow.png" alt="Team Member 4" >
-            <p class="team-name"> Moowe Moo</p>
-            <p class="team-position"> Head of Cows</p>
-            </div>
-        </td>
-    </tr>
-   
-</table>
- </div>
+<div class="team-grid">
+    {% for items in collections.aboutus %}
+        <div class="team-member">
+            <img class="team-img" src="{{ items.fields.pic.fields.file.url }}" alt="{{ items.fields.name.content[0].content[0].value }}">
+            {% set name = items.fields.name.content[0].content[0].value %}
+            <p class="team-name">{{ name }}</p>
+            {% set position = items.fields.position.content[0].content[0].value %}
+            <p class="team-position">{{ position }}</p>
+        </div>
+    {% else %}
+        <p>No team members found.</p>
+    {% endfor %}
+</div>
