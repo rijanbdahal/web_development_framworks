@@ -41,16 +41,12 @@ layout: base.njk
      for (let i = 0; i < blogPosts.length; i++) {
          const blogPost = blogPosts[i];
          const blogTitle = blogPost.getAttribute('data-title').trim().toLowerCase();
-
          const similarityScore = calculateSimilarityScore(searchTerm, blogTitle);
-
          blogPostsArray.push({ blogPost, similarityScore });
      }
 
      blogPostsArray.sort((a, b) => b.similarityScore - a.similarityScore);
-
      blogContainer.innerHTML = '';
-
      blogPostsArray.forEach((blogPostObject) => {
          blogContainer.appendChild(blogPostObject.blogPost);
      });
