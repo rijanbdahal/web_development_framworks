@@ -29,7 +29,6 @@ pagination:
         {% set endDate = project.fields.endDate %}
         <p class="project-date">{{ startDate }} to {{ endDate }}</p>  <!-- Access project start and end dates -->
 
-        <!-- Access and display the image from Contentful -->
         {% if project.fields.image %}
             <img src="{{ project.fields.image.fields.file.url }}" alt="{{ project.fields.title }} image" class="project-image">
         {% else %}
@@ -40,7 +39,7 @@ pagination:
     {% endfor %}
 </div>
 
-<!-- Pagination Controls -->
+
 <div class="pagination">
     {% if pagination.href.previous %}
         <a href="{{ pagination.href.previous }}">Previous</a>

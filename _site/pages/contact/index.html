@@ -22,6 +22,7 @@
                 <li><a href="/pages/projects/">Projects</a></li>
                 <li><a href="/pages/contact/">Contact</a></li>
                 <li><a href="/pages/media/">Media</a></li>
+                <li><a href="/pages/blogs/">Blogs</a></li>
             </ul>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
@@ -52,7 +53,7 @@
 
 <script>
   document.getElementById("contactForm").addEventListener("submit", async function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+    event.preventDefault();
 
     const formData = {
       name: document.getElementById("name").value,
@@ -60,8 +61,6 @@
       phone: document.getElementById("phone").value,
       message: document.getElementById("message").value
     };
-
-    // Sending the form data to the Netlify serverless function
     const response = await fetch("/.netlify/functions/submitForm", {
       method: "POST",
       headers: {

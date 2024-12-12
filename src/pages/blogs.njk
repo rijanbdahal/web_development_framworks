@@ -1,0 +1,84 @@
+---
+title: blogs
+Date: 2024-10-01
+tags: blogs
+layout: base.njk
+---
+
+<h1>Blogs</h1>
+
+<div class="container">
+    <!-- Search bar container -->
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search blogs by title">
+        <button id="search-button">Search</button>
+    </div>
+    <!-- Blog container -->
+    <div class="blog-container" id="blog-container">
+        {% for post in collections.blogs %}
+            <div class="blog-post" data-title="{{ post.fields.title }}" data-created-date="{{ post.fields.createdAt }}" data-content="{{ post.fields.content.content[0].content[0].value }}">
+                <h2 class="blog-title">{{ post.fields.title }}</h2>
+                <p class="blog-date">Published on: {{ post.fields.createdAt }}</p>
+                <div class="blog-content">
+                    {{ post.fields.content.content[0].content[0].value }}
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+ <script>
+ const searchInput = document.getElementById('search-input');
+ const searchButton = document.getElementById('search-button');
+ const blogContainer = document.getElementById('blog-container');
+
+ searchButton.addEventListener('click', () => {
+     const searchTerm = searchInput.value.trim().toLowerCase();
+     const blogPosts = blogContainer.children;
+
+     const blogPostsArray = [];
+
+     for (let i = 0; i < blogPosts.length; i++) {
+         const blogPost = blogPosts[i];
+         const blogTitle = blogPost.getAttribute('data-title').trim().toLowerCase();
+
+         const similarityScore = calculateSimilarityScore(searchTerm, blogTitle);
+
+         blogPostsArray.push({ blogPost, similarityScore });
+     }
+
+     blogPostsArray.sort((a, b) => b.similarityScore - a.similarityScore);
+
+     blogContainer.innerHTML = '';
+
+     blogPostsArray.forEach((blogPostObject) => {
+         blogContainer.appendChild(blogPostObject.blogPost);
+     });
+ });
+ function calculateSimilarityScore(searchTerm, blogTitle) {
+     const m = searchTerm.length;
+     const n = blogTitle.length;
+
+     const dp = Array(m + 1).fill(0).map(() => Array(n + 1).fill(0));
+
+     for (let i = 0; i <= m; i++) {
+         dp[i][0] = i;
+     }
+
+     for (let j = 0; j <= n; j++) {
+         dp[0][j] = j;
+     }
+
+     for (let i = 1; i <= m; i++) {
+         for (let j = 1; j <= n; j++) {
+             const cost = searchTerm[i - 1] === blogTitle[j - 1] ? 0 : 1;
+             dp[i][j] = Math.min(dp[i - 1][j] + 1, dp[i][j - 1] + 1, dp[i - 1][j - 1] + cost);
+         }
+     }
+
+     const levenshteinDistance = dp[m][n];
+     const similarityScore = 1 - (levenshteinDistance / Math.max(m, n));
+
+     return similarityScore;
+ }
+ </script>
